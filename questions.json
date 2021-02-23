@@ -3,11 +3,192 @@
     "getQuestions": {
       "pagination": {
         "current": 1,
-        "totalCount": 22,
+        "totalCount": 28,
         "previous": 0,
         "perPage": 50
       },
       "data": [
+        {
+          "_id": "6035108789f630001d628dbb",
+          "title": "Residential LGA",
+          "groupId": "6035108789f630001d628dba",
+          "inputType": "text",
+          "questionType": "text",
+          "type": "byAdmin",
+          "isSection": false,
+          "description": "In which LGA/City do you live?",
+          "blocked": false,
+          "keyValue": "lga-of-residence",
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": false,
+            "type": "string",
+            "message": "Please provide your residential LGA",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "6035105c89f630001d628db8",
+          "title": "Office/Business LGA",
+          "groupId": "6035105c89f630001d628db7",
+          "inputType": "text",
+          "questionType": "text",
+          "type": "byAdmin",
+          "isSection": false,
+          "description": "In which LGA is your business or office?",
+          "blocked": false,
+          "keyValue": "office-lga",
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": false,
+            "type": "string",
+            "message": "Please provide your office LGA",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "60350fab89f630001d628db0",
+          "title": "Referrer",
+          "groupId": "60350fab89f630001d628daf",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "default",
+          "isSection": false,
+          "description": "How did you hear about our product?",
+          "blocked": false,
+          "keyValue": "referrer",
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Facebook",
+                "label": "Facebook",
+                "weightPoint": 0
+              },
+              {
+                "value": "Twitter",
+                "label": "Twitter",
+                "weightPoint": 0
+              },
+              {
+                "value": "Instagram",
+                "label": "Instagram",
+                "weightPoint": 0
+              },
+              {
+                "value": "Email Campaign",
+                "label": "Email Campaign",
+                "weightPoint": 0
+              },
+              {
+                "value": "Whatsapp",
+                "label": "Whatsapp",
+                "weightPoint": 0
+              }
+            ]
+          },
+          "rules": {
+            "required": false,
+            "type": "string",
+            "message": "Please select a referrer",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "60350ca489f630001d628d94",
+          "title": "Application Message",
+          "groupId": "60350ca489f630001d628d93",
+          "inputType": "textarea",
+          "questionType": "text",
+          "type": "default",
+          "isSection": false,
+          "description": "Send an additional message to us with any other information you need us to have about your application",
+          "blocked": false,
+          "keyValue": "applicationMessage",
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": false,
+            "type": "string",
+            "message": "Please send an application message here",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "60350b0889f630001d628d79",
+          "title": "Employer or Business name",
+          "groupId": "60350b0889f630001d628d78",
+          "inputType": "text",
+          "questionType": "text",
+          "type": "default",
+          "isSection": false,
+          "description": "The name of your business or company where you work",
+          "blocked": false,
+          "keyValue": "employer-name",
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Select current loan status",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "60350aad89f630001d628d74",
+          "title": "Running Loan",
+          "groupId": "60350aad89f630001d628d73",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "default",
+          "isSection": false,
+          "description": "Do you have a current running loan?",
+          "blocked": false,
+          "keyValue": "current-loan",
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "No",
+                "label": "No",
+                "weightPoint": 0
+              },
+              {
+                "value": "Yes",
+                "label": "Yes",
+                "weightPoint": 0
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Select current loan status",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
         {
           "_id": "6035027b89f630001d628d39",
           "title": "Loan Purpose",
