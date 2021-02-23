@@ -1,0 +1,1448 @@
+{
+  "data": {
+    "getQuestions": {
+      "pagination": {
+        "current": 1,
+        "totalCount": 22,
+        "previous": 0,
+        "perPage": 50
+      },
+      "data": [
+        {
+          "_id": "6035027b89f630001d628d39",
+          "title": "Loan Purpose",
+          "groupId": "6035027b89f630001d628d38",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "default",
+          "isSection": false,
+          "description": "What do you need this loan for?",
+          "blocked": false,
+          "keyValue": "loan-purpose",
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Wedding",
+                "label": "Wedding",
+                "weightPoint": 0
+              },
+              {
+                "value": "School Fees",
+                "label": "School Fees",
+                "weightPoint": 0
+              },
+              {
+                "value": "Side Hustle",
+                "label": "Side Hustle",
+                "weightPoint": 0
+              },
+              {
+                "value": "Burial",
+                "label": "Burial",
+                "weightPoint": 0
+              },
+              {
+                "value": "Shopping",
+                "label": "Shopping",
+                "weightPoint": 0
+              },
+              {
+                "value": "Vacation",
+                "label": "Vacation",
+                "weightPoint": 0
+              },
+              {
+                "value": "Medicals",
+                "label": "Medicals",
+                "weightPoint": 0
+              },
+              {
+                "value": "Renovations",
+                "label": "Renovations",
+                "weightPoint": 0
+              },
+              {
+                "value": "Car Purchase",
+                "label": "Car Purchase",
+                "weightPoint": 0
+              },
+              {
+                "value": "Pay-off Debts",
+                "label": "Pay-off Debts",
+                "weightPoint": 0
+              },
+              {
+                "value": "Moving to New Home",
+                "label": "Moving to New Home",
+                "weightPoint": 0
+              },
+              {
+                "value": "Business Expenses",
+                "label": "Business Expenses",
+                "weightPoint": 0
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Select the loan purpose",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "603500ec89f630001d628cee",
+          "title": "Residential Status",
+          "groupId": "603500ec89f630001d628ced",
+          "inputType": "text",
+          "questionType": "text",
+          "type": "byAdmin",
+          "isSection": false,
+          "description": "What is your current living condition?",
+          "blocked": false,
+          "keyValue": "office-address",
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Hone Owner",
+                "label": "Home Owner",
+                "weightPoint": 10
+              },
+              {
+                "value": "Renting",
+                "label": "Renting",
+                "weightPoint": 8
+              },
+              {
+                "value": "Living with Relatives",
+                "label": "Living with Relatives",
+                "weightPoint": 4
+              },
+              {
+                "value": "Living with Friends",
+                "label": "Living with Friends",
+                "weightPoint": 2
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Select your residential status",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "6034fefd89f630001d628cde",
+          "title": "Company Size",
+          "groupId": "6034fefd89f630001d628cdd",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "byAdmin",
+          "isSection": false,
+          "description": "How big (in number of employees) is your business or the company where you work?",
+          "blocked": false,
+          "keyValue": "company-size",
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Less than 10 employees",
+                "label": "Less than 10 employees",
+                "weightPoint": 0
+              },
+              {
+                "value": "Between 10 and 30 employees",
+                "label": "Between 10 and 30 employees",
+                "weightPoint": 0
+              },
+              {
+                "value": "Between 30 and 50 employees",
+                "label": "Between 30 and 50 employees",
+                "weightPoint": 0
+              },
+              {
+                "value": "Between 50 and 100 employees",
+                "label": "Between 50 and 100 employees",
+                "weightPoint": 0
+              },
+              {
+                "value": "More than 100 employees",
+                "label": "More than 100 employees",
+                "weightPoint": 0
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Select your company size",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "6034fe1f89f630001d628cdb",
+          "title": "Work or Business Address",
+          "groupId": "6034fe1f89f630001d628cda",
+          "inputType": "text",
+          "questionType": "text",
+          "type": "byAdmin",
+          "isSection": false,
+          "description": "The address of your office or business?",
+          "blocked": false,
+          "keyValue": "office-address",
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Select your work state",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "6034fdd689f630001d628cb3",
+          "title": "Work or Business State",
+          "groupId": "6034fdd689f630001d628cb2",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "byAdmin",
+          "isSection": false,
+          "description": "In which state do you currently work or do business?",
+          "blocked": false,
+          "keyValue": "office-state",
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Abia",
+                "label": "Abia",
+                "weightPoint": 5
+              },
+              {
+                "value": "Abuja",
+                "label": "Abuja",
+                "weightPoint": 5
+              },
+              {
+                "value": "Adamawa",
+                "label": "Adamawa",
+                "weightPoint": 5
+              },
+              {
+                "value": "Akwa Ibom",
+                "label": "Akwa Ibom",
+                "weightPoint": 5
+              },
+              {
+                "value": "Anambra",
+                "label": "Anambra",
+                "weightPoint": 5
+              },
+              {
+                "value": "Bauchi",
+                "label": "Bauchi",
+                "weightPoint": 5
+              },
+              {
+                "value": "Bayelsa",
+                "label": "Bayelsa",
+                "weightPoint": 5
+              },
+              {
+                "value": "Benue",
+                "label": "Benue",
+                "weightPoint": 5
+              },
+              {
+                "value": "Borno",
+                "label": "Borno",
+                "weightPoint": 5
+              },
+              {
+                "value": "Cross River",
+                "label": "Cross River",
+                "weightPoint": 5
+              },
+              {
+                "value": "Delta",
+                "label": "Delta",
+                "weightPoint": 5
+              },
+              {
+                "value": "Ebonyi",
+                "label": "Ebonyi",
+                "weightPoint": 5
+              },
+              {
+                "value": "Edo",
+                "label": "Edo",
+                "weightPoint": 5
+              },
+              {
+                "value": "Ekiti",
+                "label": "Ekiti",
+                "weightPoint": 5
+              },
+              {
+                "value": "Enugu",
+                "label": "Enugu",
+                "weightPoint": 5
+              },
+              {
+                "value": "Gombe",
+                "label": "Gombe",
+                "weightPoint": 5
+              },
+              {
+                "value": "Imo",
+                "label": "Imo",
+                "weightPoint": 5
+              },
+              {
+                "value": "Jigawa",
+                "label": "Jigawa",
+                "weightPoint": 5
+              },
+              {
+                "value": "Kaduna",
+                "label": "Kaduna",
+                "weightPoint": 5
+              },
+              {
+                "value": "Kano",
+                "label": "Kano",
+                "weightPoint": 5
+              },
+              {
+                "value": "Katsina",
+                "label": "Katsina",
+                "weightPoint": 5
+              },
+              {
+                "value": "Kebbi",
+                "label": "Kebbi",
+                "weightPoint": 5
+              },
+              {
+                "value": "Kogi",
+                "label": "Kogi",
+                "weightPoint": 5
+              },
+              {
+                "value": "Kwara",
+                "label": "Kwara",
+                "weightPoint": 5
+              },
+              {
+                "value": "Lagos",
+                "label": "Lagos",
+                "weightPoint": 5
+              },
+              {
+                "value": "Nasarawa",
+                "label": "Nasarawa",
+                "weightPoint": 5
+              },
+              {
+                "value": "Niger",
+                "label": "Niger",
+                "weightPoint": 5
+              },
+              {
+                "value": "Ogun",
+                "label": "Ogun",
+                "weightPoint": 5
+              },
+              {
+                "value": "Ondo",
+                "label": "Ondo",
+                "weightPoint": 5
+              },
+              {
+                "value": "Osun",
+                "label": "Osun",
+                "weightPoint": 5
+              },
+              {
+                "value": "Oyo",
+                "label": "Oyo",
+                "weightPoint": 5
+              },
+              {
+                "value": "Plateau",
+                "label": "Plateau",
+                "weightPoint": 5
+              },
+              {
+                "value": "Rivers",
+                "label": "Rivers",
+                "weightPoint": 5
+              },
+              {
+                "value": "Sokoto",
+                "label": "Sokoto",
+                "weightPoint": 5
+              },
+              {
+                "value": "Taraba",
+                "label": "Taraba",
+                "weightPoint": 5
+              },
+              {
+                "value": "Yobe",
+                "label": "Yobe",
+                "weightPoint": 5
+              },
+              {
+                "value": "Zamfara",
+                "label": "Zamfara",
+                "weightPoint": 5
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Select your work state",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "6034fd1f89f630001d628ca4",
+          "title": "Work or Business Sector",
+          "groupId": "6034fd1f89f630001d628ca3",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "byAdmin",
+          "isSection": false,
+          "description": "In which sector do you currently work or do business",
+          "blocked": false,
+          "keyValue": "work-sector",
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Agriculture",
+                "label": "Agriculture",
+                "weightPoint": 0
+              },
+              {
+                "value": "Construction/Real Estate",
+                "label": "Construction/Real Estate",
+                "weightPoint": 0
+              },
+              {
+                "value": "Consumer Goods",
+                "label": "Consumer Goods",
+                "weightPoint": 0
+              },
+              {
+                "value": "Financial Services",
+                "label": "Financial Services",
+                "weightPoint": 0
+              },
+              {
+                "value": "Online",
+                "label": "Online",
+                "weightPoint": 0
+              },
+              {
+                "value": "Industrial Goods",
+                "label": "Industrial Goods",
+                "weightPoint": 0
+              },
+              {
+                "value": "Information and Communications Technology",
+                "label": "Information and Communications Technology",
+                "weightPoint": 0
+              },
+              {
+                "value": "Oil & Gas",
+                "label": "Oil & Gas",
+                "weightPoint": 0
+              },
+              {
+                "value": "Services",
+                "label": "Services",
+                "weightPoint": 0
+              },
+              {
+                "value": "Utilities",
+                "label": "Utilities",
+                "weightPoint": 0
+              },
+              {
+                "value": "Education",
+                "label": "Education",
+                "weightPoint": 0
+              },
+              {
+                "value": "Non-Governmental Organization",
+                "label": "Non-Governmental Organization",
+                "weightPoint": 0
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Select your work sector",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "6034fb4989f630001d628c70",
+          "title": "Bank",
+          "groupId": "6034fb4989f630001d628c6f",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "byAdmin",
+          "isSection": false,
+          "description": "WHich bank does your earned income get paid",
+          "blocked": false,
+          "keyValue": "income-bank",
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Access Bank",
+                "label": "Access Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "Citibank Nigeria",
+                "label": "Citibank Nigeria",
+                "weightPoint": 0
+              },
+              {
+                "value": "Coronation Merchant Bank",
+                "label": "Coronation Merchant Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "Ecobank Nigeria Limited",
+                "label": "Ecobank Nigeria Limited",
+                "weightPoint": 0
+              },
+              {
+                "value": "FBNQuest Merchant Bank",
+                "label": "FBNQuest Merchant Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "Fidelity Bank",
+                "label": "Fidelity Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "Finca Microfinance Bank Limited",
+                "label": "Finca Microfinance Bank Limited",
+                "weightPoint": 0
+              },
+              {
+                "value": "First Bank of Nigeria",
+                "label": "First Bank of Nigeria",
+                "weightPoint": 0
+              },
+              {
+                "value": "First City Monument Bank",
+                "label": "First City Monument Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "FSDH Merchant Bank",
+                "label": "FSDH Merchant Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "Globus Bank",
+                "label": "Globus Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "Guaranty Trust Bank",
+                "label": "Guaranty Trust Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "Jaiz Bank",
+                "label": "Jaiz Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "Keystone Bank",
+                "label": "Keystone Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "Kuda Bank",
+                "label": "Kuda Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "Mutual Trust Microfinance Bank",
+                "label": "Mutual Trust Microfinance Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "Nova Merchant Bank",
+                "label": "Nova Merchant Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "Polaris Bank",
+                "label": "Polaris Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "Providus Bank",
+                "label": "Providus Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "Rand Merchant Bank",
+                "label": "Rand Merchant Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "Rubies Bank",
+                "label": "Rubies Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "Stanbic IBTC Bank",
+                "label": "Stanbic IBTC Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "Standard Chartered",
+                "label": "Standard Chartered",
+                "weightPoint": 0
+              },
+              {
+                "value": "Sterling Bank",
+                "label": "Sterling Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "SunTrust Bank",
+                "label": "SunTrust Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "TAJBank",
+                "label": "TAJBank",
+                "weightPoint": 0
+              },
+              {
+                "value": "Titan Trust Bank",
+                "label": "Titan Trust Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "Union Bank of Nigeria",
+                "label": "Union Bank of Nigeria",
+                "weightPoint": 0
+              },
+              {
+                "value": "United Bank for Africa",
+                "label": "United Bank for Africa",
+                "weightPoint": 0
+              },
+              {
+                "value": "Unity Bank",
+                "label": "Unity Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "VFD MFB",
+                "label": "VFD MFB",
+                "weightPoint": 0
+              },
+              {
+                "value": "Wema Bank",
+                "label": "Wema Bank",
+                "weightPoint": 0
+              },
+              {
+                "value": "Zenith Bank",
+                "label": "Zenith Bank",
+                "weightPoint": 0
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Select your bank",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "6033a823bd5afd14ade3c92e",
+          "title": "New Form Again",
+          "groupId": "6033a823bd5afd14ade3c92d",
+          "inputType": null,
+          "questionType": null,
+          "type": "default",
+          "isSection": true,
+          "description": "Question Description",
+          "blocked": false,
+          "keyValue": "age",
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": false,
+            "type": "string",
+            "message": "Invalid input",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602cfac5529fbc001c67a07b",
+          "title": "Loan Tenure (Months)",
+          "groupId": "602cfac5529fbc001c67a07a",
+          "inputType": "text",
+          "questionType": "text",
+          "type": "default",
+          "isSection": false,
+          "description": "How much time (in months) do you need to pay back?",
+          "blocked": false,
+          "keyValue": "loan-tenure",
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please provide your loan tenure",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602cfac5529fbc001c67a079",
+          "title": "What mode of identity do you poses?",
+          "groupId": "602cfac5529fbc001c67a078",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "onBoarding",
+          "isSection": false,
+          "description": "Lenders need to know what mode of identity you poses for KYC purposes.",
+          "blocked": false,
+          "keyValue": "form-of-id",
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "National ID Card",
+                "label": "National ID Card",
+                "weightPoint": 10
+              },
+              {
+                "value": "International Passport",
+                "label": "International Passport",
+                "weightPoint": 10
+              },
+              {
+                "value": "National Drivers License",
+                "label": "National Drivers License",
+                "weightPoint": 10
+              },
+              {
+                "value": "Work ID Card",
+                "label": "Work ID Card",
+                "weightPoint": 5
+              },
+              {
+                "value": "NYSC ID Card",
+                "label": "NYSC ID Card",
+                "weightPoint": 7
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please select loan purpose",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602cfac5529fbc001c67a077",
+          "title": "Loan Amount",
+          "groupId": "602cfac5529fbc001c67a076",
+          "inputType": "text",
+          "questionType": "text",
+          "type": "default",
+          "isSection": false,
+          "description": "How much do you need to loan?",
+          "blocked": false,
+          "keyValue": "loan-amount",
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please provide your loan amount",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602bd6c02d18f9001c956cf4",
+          "title": "How much do you intend to loan?",
+          "groupId": "602bd6c02d18f9001c956cf3",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "onBoarding",
+          "isSection": false,
+          "description": "Give us an idea of how much you might need to take as a loan in the near future",
+          "blocked": false,
+          "keyValue": null,
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Below 100,000",
+                "label": "Below 100,000",
+                "weightPoint": 5
+              },
+              {
+                "value": "100,000 - 500,000",
+                "label": "100,000 - 500,000",
+                "weightPoint": 5
+              },
+              {
+                "value": "500,000 - 1,000,000",
+                "label": "500,000 - 1,000,000",
+                "weightPoint": 5
+              },
+              {
+                "value": "1,000,000 - 5,000,000",
+                "label": "1,000,000 - 5,000,000",
+                "weightPoint": 5
+              },
+              {
+                "value": "Above 5,000,000",
+                "label": "Above 5,000,000",
+                "weightPoint": 5
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Pick loan amount range",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602bd67d2d18f9001c956ce4",
+          "title": "What is your income range?",
+          "groupId": "602bd67d2d18f9001c956ce3",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "onBoarding",
+          "isSection": false,
+          "description": "Lenders need to know how much you earn before you apply for a loan. This will help them get you a comfortable repayment period at the best rates",
+          "blocked": false,
+          "keyValue": "monthly-net-income",
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Below 100,000",
+                "label": "Below 100,000",
+                "weightPoint": 5
+              },
+              {
+                "value": "100,000 - 500,000",
+                "label": "100,000 - 500,000",
+                "weightPoint": 7
+              },
+              {
+                "value": "500,000 - 1,000,000",
+                "label": "500,000 - 1,000,000",
+                "weightPoint": 8
+              },
+              {
+                "value": "1,000,000 - 5,000,000",
+                "label": "1,000,000 - 5,000,000",
+                "weightPoint": 9
+              },
+              {
+                "value": "Above 5,000,000",
+                "label": "Above 5,000,000",
+                "weightPoint": 10
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please select loan purpose",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602bd6672d18f9001c956cde",
+          "title": "What is your employment status?",
+          "groupId": "602bd6672d18f9001c956cdd",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "onBoarding",
+          "isSection": false,
+          "description": "Lenders need to know your employment status to determine how likely you are to repay a loan.",
+          "blocked": false,
+          "keyValue": "employment-status",
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Employed",
+                "label": "Employed",
+                "weightPoint": 10
+              },
+              {
+                "value": "Unemployed",
+                "label": "Unemployed",
+                "weightPoint": 5
+              },
+              {
+                "value": "Self employed",
+                "label": "Self employed (Business owner)",
+                "weightPoint": 5
+              },
+              {
+                "value": "Student",
+                "label": "Student",
+                "weightPoint": 5
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please select loan purpose",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602bd6472d18f9001c956cb6",
+          "title": "Where is your location?",
+          "groupId": "602bd6472d18f9001c956cb5",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "onBoarding",
+          "isSection": false,
+          "description": "Lenders need to know where you reside and work in to to gauge your viability for the loan",
+          "blocked": false,
+          "keyValue": "state-of-residence",
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Abia",
+                "label": "Abia",
+                "weightPoint": 5
+              },
+              {
+                "value": "Abuja",
+                "label": "Abuja",
+                "weightPoint": 5
+              },
+              {
+                "value": "Adamawa",
+                "label": "Adamawa",
+                "weightPoint": 5
+              },
+              {
+                "value": "Akwa Ibom",
+                "label": "Akwa Ibom",
+                "weightPoint": 5
+              },
+              {
+                "value": "Anambra",
+                "label": "Anambra",
+                "weightPoint": 5
+              },
+              {
+                "value": "Bauchi",
+                "label": "Bauchi",
+                "weightPoint": 5
+              },
+              {
+                "value": "Bayelsa",
+                "label": "Bayelsa",
+                "weightPoint": 5
+              },
+              {
+                "value": "Benue",
+                "label": "Benue",
+                "weightPoint": 5
+              },
+              {
+                "value": "Borno",
+                "label": "Borno",
+                "weightPoint": 5
+              },
+              {
+                "value": "Cross River",
+                "label": "Cross River",
+                "weightPoint": 5
+              },
+              {
+                "value": "Delta",
+                "label": "Delta",
+                "weightPoint": 5
+              },
+              {
+                "value": "Ebonyi",
+                "label": "Ebonyi",
+                "weightPoint": 5
+              },
+              {
+                "value": "Edo",
+                "label": "Edo",
+                "weightPoint": 5
+              },
+              {
+                "value": "Ekiti",
+                "label": "Ekiti",
+                "weightPoint": 5
+              },
+              {
+                "value": "Enugu",
+                "label": "Enugu",
+                "weightPoint": 5
+              },
+              {
+                "value": "Gombe",
+                "label": "Gombe",
+                "weightPoint": 5
+              },
+              {
+                "value": "Imo",
+                "label": "Imo",
+                "weightPoint": 5
+              },
+              {
+                "value": "Jigawa",
+                "label": "Jigawa",
+                "weightPoint": 5
+              },
+              {
+                "value": "Kaduna",
+                "label": "Kaduna",
+                "weightPoint": 5
+              },
+              {
+                "value": "Kano",
+                "label": "Kano",
+                "weightPoint": 5
+              },
+              {
+                "value": "Katsina",
+                "label": "Katsina",
+                "weightPoint": 5
+              },
+              {
+                "value": "Kebbi",
+                "label": "Kebbi",
+                "weightPoint": 5
+              },
+              {
+                "value": "Kogi",
+                "label": "Kogi",
+                "weightPoint": 5
+              },
+              {
+                "value": "Kwara",
+                "label": "Kwara",
+                "weightPoint": 5
+              },
+              {
+                "value": "Lagos",
+                "label": "Lagos",
+                "weightPoint": 5
+              },
+              {
+                "value": "Nasarawa",
+                "label": "Nasarawa",
+                "weightPoint": 5
+              },
+              {
+                "value": "Niger",
+                "label": "Niger",
+                "weightPoint": 5
+              },
+              {
+                "value": "Ogun",
+                "label": "Ogun",
+                "weightPoint": 5
+              },
+              {
+                "value": "Ondo",
+                "label": "Ondo",
+                "weightPoint": 5
+              },
+              {
+                "value": "Osun",
+                "label": "Osun",
+                "weightPoint": 5
+              },
+              {
+                "value": "Oyo",
+                "label": "Oyo",
+                "weightPoint": 5
+              },
+              {
+                "value": "Plateau",
+                "label": "Plateau",
+                "weightPoint": 5
+              },
+              {
+                "value": "Rivers",
+                "label": "Rivers",
+                "weightPoint": 5
+              },
+              {
+                "value": "Sokoto",
+                "label": "Sokoto",
+                "weightPoint": 5
+              },
+              {
+                "value": "Taraba",
+                "label": "Taraba",
+                "weightPoint": 5
+              },
+              {
+                "value": "Yobe",
+                "label": "Yobe",
+                "weightPoint": 5
+              },
+              {
+                "value": "Zamfara",
+                "label": "Zamfara",
+                "weightPoint": 5
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please select loan purpose",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602bc0582d18f9001c956c9c",
+          "title": "Preferred contact method",
+          "groupId": "602bc0582d18f9001c956c9b",
+          "inputType": "checkbox",
+          "questionType": "multiChoice",
+          "type": "byAdmin",
+          "isSection": false,
+          "description": "How do you prefer to be contacted?",
+          "blocked": false,
+          "keyValue": "preferred-contact-method",
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "SMS",
+                "label": "SMS",
+                "weightPoint": 0
+              },
+              {
+                "value": "Email",
+                "label": "Email",
+                "weightPoint": 0
+              },
+              {
+                "value": "WhatsApp",
+                "label": "WhatsApp",
+                "weightPoint": 0
+              },
+              {
+                "value": "Phone Calls",
+                "label": "Phone Calls",
+                "weightPoint": 0
+              }
+            ]
+          },
+          "rules": {
+            "required": false,
+            "type": "string",
+            "message": "Please select your preferred contact method",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602bbfef2d18f9001c956c94",
+          "title": "Number of Children",
+          "groupId": "602bbfef2d18f9001c956c93",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "byAdmin",
+          "isSection": false,
+          "description": "How many children or dependants do you have?",
+          "blocked": false,
+          "keyValue": "number-of-children",
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "none",
+                "label": "none",
+                "weightPoint": 0
+              },
+              {
+                "value": "Less than 3",
+                "label": "Less than 3",
+                "weightPoint": 0
+              },
+              {
+                "value": "Between 3 - 5",
+                "label": "Between 3 - 5",
+                "weightPoint": 0
+              },
+              {
+                "value": "More than 5",
+                "label": "More than 5",
+                "weightPoint": 0
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please select loan purpose",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602bbf852d18f9001c956c8d",
+          "title": "Marital Status",
+          "groupId": "602bbf852d18f9001c956c8c",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "byAdmin",
+          "isSection": false,
+          "description": "What is your marital status?",
+          "blocked": false,
+          "keyValue": "marital-status",
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Single",
+                "label": "Single",
+                "weightPoint": 0
+              },
+              {
+                "value": "Married",
+                "label": "Married",
+                "weightPoint": 0
+              },
+              {
+                "value": "Divorced",
+                "label": "Divorced",
+                "weightPoint": 0
+              },
+              {
+                "value": "Widowed",
+                "label": "Widowed",
+                "weightPoint": 0
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please select loan purpose",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602bbf142d18f9001c956c86",
+          "title": "Highest Educational Qualification",
+          "groupId": "602bbf142d18f9001c956c85",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "byAdmin",
+          "isSection": false,
+          "description": "Which Educational qualification do you currently posses?",
+          "blocked": false,
+          "keyValue": "highest-education-qualification",
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Post Graduate",
+                "label": "Post Graduate",
+                "weightPoint": 0
+              },
+              {
+                "value": "Graduate",
+                "label": "Graduate",
+                "weightPoint": 0
+              },
+              {
+                "value": "Secondary",
+                "label": "Secondary",
+                "weightPoint": 0
+              },
+              {
+                "value": "Primary",
+                "label": "primary",
+                "weightPoint": 0
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please select loan purpose",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602bbeee2d18f9001c956c7f",
+          "title": "Residential Address",
+          "groupId": "602bbeee2d18f9001c956c7e",
+          "inputType": "text",
+          "questionType": "text",
+          "type": "byAdmin",
+          "isSection": false,
+          "description": "Where do you currently live?",
+          "blocked": false,
+          "keyValue": "residential-address",
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please select loan purpose",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602bbe662d18f9001c956c75",
+          "title": "Account number",
+          "groupId": "602bbe662d18f9001c956c74",
+          "inputType": "text",
+          "questionType": "text",
+          "type": "byAdmin",
+          "isSection": false,
+          "description": "Your account number",
+          "blocked": false,
+          "keyValue": null,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please provide your account number",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602bbe162d18f9001c956c51",
+          "title": "Account Type",
+          "groupId": "602bbe162d18f9001c956c50",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "byAdmin",
+          "isSection": false,
+          "description": "What type of account do you have with your bank?",
+          "blocked": false,
+          "keyValue": "account-type",
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Current",
+                "label": "Current",
+                "weightPoint": 0
+              },
+              {
+                "value": "Credit",
+                "label": "Credit",
+                "weightPoint": 0
+              },
+              {
+                "value": "Savings",
+                "label": "Savings",
+                "weightPoint": 0
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please select loan purpose",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        }
+      ]
+    }
+  }
+}
