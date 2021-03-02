@@ -3,96 +3,42 @@
     "getQuestions": {
       "pagination": {
         "current": 1,
-        "totalCount": 28,
+        "totalCount": 45,
         "previous": 0,
         "perPage": 50
       },
       "data": [
         {
-          "_id": "6035108789f630001d628dbb",
-          "title": "Residential LGA",
-          "groupId": "6035108789f630001d628dba",
-          "inputType": "text",
-          "questionType": "text",
-          "type": "byAdmin",
-          "isSection": false,
-          "description": "In which LGA/City do you live?",
-          "blocked": false,
-          "keyValue": "lga-of-residence",
-          "options": {
-            "inline": false,
-            "data": []
-          },
-          "rules": {
-            "required": false,
-            "type": "string",
-            "message": "Please provide your residential LGA",
-            "max": -1,
-            "min": -1,
-            "len": -1
-          }
-        },
-        {
-          "_id": "6035105c89f630001d628db8",
-          "title": "Office/Business LGA",
-          "groupId": "6035105c89f630001d628db7",
-          "inputType": "text",
-          "questionType": "text",
-          "type": "byAdmin",
-          "isSection": false,
-          "description": "In which LGA is your business or office?",
-          "blocked": false,
-          "keyValue": "office-lga",
-          "options": {
-            "inline": false,
-            "data": []
-          },
-          "rules": {
-            "required": false,
-            "type": "string",
-            "message": "Please provide your office LGA",
-            "max": -1,
-            "min": -1,
-            "len": -1
-          }
-        },
-        {
-          "_id": "60350fab89f630001d628db0",
-          "title": "Referrer",
-          "groupId": "60350fab89f630001d628daf",
+          "_id": "603ceccad9c0ad001ce3f635",
+          "title": "Business Registration Type",
+          "description": "What type of registration does your business have? (for registered business)",
+          "groupId": "603ceccad9c0ad001ce3f634",
           "inputType": "dropdown",
           "questionType": "multiChoice",
           "type": "default",
           "isSection": false,
-          "description": "How did you hear about our product?",
           "blocked": false,
-          "keyValue": "referrer",
           "options": {
             "inline": false,
             "data": [
               {
-                "value": "Facebook",
-                "label": "Facebook",
+                "value": "Limited Liability",
+                "label": "Limited Liability",
                 "weightPoint": 0
               },
               {
-                "value": "Twitter",
-                "label": "Twitter",
+                "value": "Enterprise",
+                "label": "Enterprise",
                 "weightPoint": 0
               },
               {
-                "value": "Instagram",
-                "label": "Instagram",
+                "value": "Venture",
+                "label": "Venture",
                 "weightPoint": 0
               },
               {
-                "value": "Email Campaign",
-                "label": "Email Campaign",
-                "weightPoint": 0
-              },
-              {
-                "value": "Whatsapp",
-                "label": "Whatsapp",
+                "value": "Business Name",
+                "label": "Business Name",
                 "weightPoint": 0
               }
             ]
@@ -100,71 +46,22 @@
           "rules": {
             "required": false,
             "type": "string",
-            "message": "Please select a referrer",
+            "message": "Please select your business registration status",
             "max": -1,
             "min": -1,
             "len": -1
           }
         },
         {
-          "_id": "60350ca489f630001d628d94",
-          "title": "Application Message",
-          "groupId": "60350ca489f630001d628d93",
-          "inputType": "textarea",
-          "questionType": "text",
-          "type": "default",
-          "isSection": false,
-          "description": "Send an additional message to us with any other information you need us to have about your application",
-          "blocked": false,
-          "keyValue": "applicationMessage",
-          "options": {
-            "inline": false,
-            "data": []
-          },
-          "rules": {
-            "required": false,
-            "type": "string",
-            "message": "Please send an application message here",
-            "max": -1,
-            "min": -1,
-            "len": -1
-          }
-        },
-        {
-          "_id": "60350b0889f630001d628d79",
-          "title": "Employer or Business name",
-          "groupId": "60350b0889f630001d628d78",
-          "inputType": "text",
-          "questionType": "text",
-          "type": "default",
-          "isSection": false,
-          "description": "The name of your business or company where you work",
-          "blocked": false,
-          "keyValue": "employer-name",
-          "options": {
-            "inline": false,
-            "data": []
-          },
-          "rules": {
-            "required": true,
-            "type": "string",
-            "message": "Select current loan status",
-            "max": -1,
-            "min": -1,
-            "len": -1
-          }
-        },
-        {
-          "_id": "60350aad89f630001d628d74",
-          "title": "Running Loan",
-          "groupId": "60350aad89f630001d628d73",
+          "_id": "603cec0ad9c0ad001ce3f630",
+          "title": "Business Registration Status",
+          "description": "Is your business registered? (for self employed individuals)",
+          "groupId": "603cec0ad9c0ad001ce3f62f",
           "inputType": "dropdown",
           "questionType": "multiChoice",
           "type": "default",
           "isSection": false,
-          "description": "Do you have a current running loan?",
           "blocked": false,
-          "keyValue": "current-loan",
           "options": {
             "inline": false,
             "data": [
@@ -181,205 +78,24 @@
             ]
           },
           "rules": {
-            "required": true,
+            "required": false,
             "type": "string",
-            "message": "Select current loan status",
+            "message": "Please select your business registration status",
             "max": -1,
             "min": -1,
             "len": -1
           }
         },
         {
-          "_id": "6035027b89f630001d628d39",
-          "title": "Loan Purpose",
-          "groupId": "6035027b89f630001d628d38",
-          "inputType": "dropdown",
-          "questionType": "multiChoice",
+          "_id": "603ceacfd9c0ad001ce3f602",
+          "title": "Employment/Business Establishment date",
+          "description": "When did you start working at your current job or establish your current business (If self employed)",
+          "groupId": "603ceacfd9c0ad001ce3f601",
+          "inputType": "text",
+          "questionType": "date",
           "type": "default",
           "isSection": false,
-          "description": "What do you need this loan for?",
           "blocked": false,
-          "keyValue": "loan-purpose",
-          "options": {
-            "inline": false,
-            "data": [
-              {
-                "value": "Wedding",
-                "label": "Wedding",
-                "weightPoint": 0
-              },
-              {
-                "value": "School Fees",
-                "label": "School Fees",
-                "weightPoint": 0
-              },
-              {
-                "value": "Side Hustle",
-                "label": "Side Hustle",
-                "weightPoint": 0
-              },
-              {
-                "value": "Burial",
-                "label": "Burial",
-                "weightPoint": 0
-              },
-              {
-                "value": "Shopping",
-                "label": "Shopping",
-                "weightPoint": 0
-              },
-              {
-                "value": "Vacation",
-                "label": "Vacation",
-                "weightPoint": 0
-              },
-              {
-                "value": "Medicals",
-                "label": "Medicals",
-                "weightPoint": 0
-              },
-              {
-                "value": "Renovations",
-                "label": "Renovations",
-                "weightPoint": 0
-              },
-              {
-                "value": "Car Purchase",
-                "label": "Car Purchase",
-                "weightPoint": 0
-              },
-              {
-                "value": "Pay-off Debts",
-                "label": "Pay-off Debts",
-                "weightPoint": 0
-              },
-              {
-                "value": "Moving to New Home",
-                "label": "Moving to New Home",
-                "weightPoint": 0
-              },
-              {
-                "value": "Business Expenses",
-                "label": "Business Expenses",
-                "weightPoint": 0
-              }
-            ]
-          },
-          "rules": {
-            "required": true,
-            "type": "string",
-            "message": "Select the loan purpose",
-            "max": -1,
-            "min": -1,
-            "len": -1
-          }
-        },
-        {
-          "_id": "603500ec89f630001d628cee",
-          "title": "Residential Status",
-          "groupId": "603500ec89f630001d628ced",
-          "inputType": "text",
-          "questionType": "text",
-          "type": "byAdmin",
-          "isSection": false,
-          "description": "What is your current living condition?",
-          "blocked": false,
-          "keyValue": "office-address",
-          "options": {
-            "inline": false,
-            "data": [
-              {
-                "value": "Hone Owner",
-                "label": "Home Owner",
-                "weightPoint": 10
-              },
-              {
-                "value": "Renting",
-                "label": "Renting",
-                "weightPoint": 8
-              },
-              {
-                "value": "Living with Relatives",
-                "label": "Living with Relatives",
-                "weightPoint": 4
-              },
-              {
-                "value": "Living with Friends",
-                "label": "Living with Friends",
-                "weightPoint": 2
-              }
-            ]
-          },
-          "rules": {
-            "required": true,
-            "type": "string",
-            "message": "Select your residential status",
-            "max": -1,
-            "min": -1,
-            "len": -1
-          }
-        },
-        {
-          "_id": "6034fefd89f630001d628cde",
-          "title": "Company Size",
-          "groupId": "6034fefd89f630001d628cdd",
-          "inputType": "dropdown",
-          "questionType": "multiChoice",
-          "type": "byAdmin",
-          "isSection": false,
-          "description": "How big (in number of employees) is your business or the company where you work?",
-          "blocked": false,
-          "keyValue": "company-size",
-          "options": {
-            "inline": false,
-            "data": [
-              {
-                "value": "Less than 10 employees",
-                "label": "Less than 10 employees",
-                "weightPoint": 0
-              },
-              {
-                "value": "Between 10 and 30 employees",
-                "label": "Between 10 and 30 employees",
-                "weightPoint": 0
-              },
-              {
-                "value": "Between 30 and 50 employees",
-                "label": "Between 30 and 50 employees",
-                "weightPoint": 0
-              },
-              {
-                "value": "Between 50 and 100 employees",
-                "label": "Between 50 and 100 employees",
-                "weightPoint": 0
-              },
-              {
-                "value": "More than 100 employees",
-                "label": "More than 100 employees",
-                "weightPoint": 0
-              }
-            ]
-          },
-          "rules": {
-            "required": true,
-            "type": "string",
-            "message": "Select your company size",
-            "max": -1,
-            "min": -1,
-            "len": -1
-          }
-        },
-        {
-          "_id": "6034fe1f89f630001d628cdb",
-          "title": "Work or Business Address",
-          "groupId": "6034fe1f89f630001d628cda",
-          "inputType": "text",
-          "questionType": "text",
-          "type": "byAdmin",
-          "isSection": false,
-          "description": "The address of your office or business?",
-          "blocked": false,
-          "keyValue": "office-address",
           "options": {
             "inline": false,
             "data": []
@@ -387,23 +103,636 @@
           "rules": {
             "required": true,
             "type": "string",
-            "message": "Select your work state",
+            "message": "Please select your employment or business establishment date",
             "max": -1,
             "min": -1,
             "len": -1
           }
         },
         {
-          "_id": "6034fdd689f630001d628cb3",
-          "title": "Work or Business State",
-          "groupId": "6034fdd689f630001d628cb2",
+          "_id": "603ce7d0d9c0ad001ce3f5ff",
+          "title": "Running Loan Amount",
+          "description": "How much did you borrow for your current running loan",
+          "groupId": "603ce7d0d9c0ad001ce3f5fe",
+          "inputType": "text",
+          "questionType": "text",
+          "type": "default",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": true,
+            "type": "number",
+            "message": "Please enter amount for running loan",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "6038df4a1fe8ec001cb02de0",
+          "title": "Proof of Tax Identification Number {TIN)",
+          "description": "Tax identification certificate for your business.s",
+          "groupId": "6038df4a1fe8ec001cb02ddf",
+          "inputType": "file",
+          "questionType": "upload",
+          "type": "default",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": false,
+            "type": "url",
+            "message": "Select and upload your utility bill",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "6038df0f1fe8ec001cb02ddd",
+          "title": "Utility Bill",
+          "description": "Utitlty bill from your home, office or business premises",
+          "groupId": "6038df0f1fe8ec001cb02ddc",
+          "inputType": "file",
+          "questionType": "upload",
+          "type": "default",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": false,
+            "type": "url",
+            "message": "Select and upload your utility bill",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "6038deac1fe8ec001cb02dda",
+          "title": "1 Year Business Account",
+          "description": "Please upload your business account statements for the past year. Please scan and combine the documents into 1 pdf file",
+          "groupId": "6038deac1fe8ec001cb02dd9",
+          "inputType": "file",
+          "questionType": "upload",
+          "type": "default",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": false,
+            "type": "url",
+            "message": "Select and upload your account statements",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "6038de4d1fe8ec001cb02dd7",
+          "title": "Letter of Employment/Promotion",
+          "description": "Please upload Letter of employment/redeployment letter/Salary increase letter/Promotion letter from the company where you work",
+          "groupId": "6038de4d1fe8ec001cb02dd6",
+          "inputType": "file",
+          "questionType": "upload",
+          "type": "default",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": false,
+            "type": "url",
+            "message": "Select and upload your employment promotion letter",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "6038ddd41fe8ec001cb02dd4",
+          "title": "E Signature",
+          "description": "Please upload your signature signed against a white background and clearly scanned",
+          "groupId": "6038ddd41fe8ec001cb02dd3",
+          "inputType": "file",
+          "questionType": "upload",
+          "type": "default",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": true,
+            "type": "url",
+            "message": "Select and upload your signature",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "6038dd201fe8ec001cb02dd1",
+          "title": "Registered Business Documents",
+          "description": "Please upload Valid Business registration documents from a Government Agency (eg CAC). Please scan and combine the documents into 1 pdf file",
+          "groupId": "6038dd201fe8ec001cb02dd0",
+          "inputType": "file",
+          "questionType": "upload",
+          "type": "default",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": false,
+            "type": "url",
+            "message": "Select and upload business documents",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "6038dc621fe8ec001cb02dce",
+          "title": "Regulatory ID card",
+          "description": "Please upload a valid regulatory (Government issued) ID card",
+          "groupId": "6038dc621fe8ec001cb02dcd",
+          "inputType": "file",
+          "questionType": "upload",
+          "type": "default",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": true,
+            "type": "url",
+            "message": "Select and upload a regulatory ID card",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "6038db7b1fe8ec001cb02dcb",
+          "title": "Passport Photograph",
+          "description": "Please select and upload a recent passport photograph",
+          "groupId": "6038db7b1fe8ec001cb02dca",
+          "inputType": "file",
+          "questionType": "upload",
+          "type": "default",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": true,
+            "type": "url",
+            "message": "Select and upload recent passport photo",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "603860201fe8ec001cb02b7a",
+          "title": "Date moved in",
+          "description": "When did you move in to your current home?",
+          "groupId": "603860201fe8ec001cb02b79",
+          "inputType": "date",
+          "questionType": "date",
+          "type": "default",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please provide your move-in date",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "60385dd21fe8ec001cb02b57",
+          "title": "Monthly Net Income",
+          "description": "How much do you earn monthly",
+          "groupId": "60385dd21fe8ec001cb02b56",
+          "inputType": "text",
+          "questionType": "text",
+          "type": "default",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": true,
+            "type": "number",
+            "message": "Please provide your monthly net income",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "6036d5f8881fe1001c8f6168",
+          "title": "Relationship with Next of Kin",
+          "description": "How are you related to your Next of Kin?",
+          "groupId": "6036d5f8881fe1001c8f6167",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "default",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Sibling",
+                "label": "Sibling",
+                "weightPoint": 0
+              },
+              {
+                "value": "Spouse",
+                "label": "Spouse",
+                "weightPoint": 0
+              },
+              {
+                "value": "Parent",
+                "label": "Parent",
+                "weightPoint": 0
+              },
+              {
+                "value": "Friend",
+                "label": "Friend",
+                "weightPoint": 0
+              },
+              {
+                "value": "Child",
+                "label": "Child",
+                "weightPoint": 0
+              },
+              {
+                "value": "Other",
+                "label": "Other",
+                "weightPoint": 0
+              }
+            ]
+          },
+          "rules": {
+            "required": false,
+            "type": "string",
+            "message": "Please provide your relationship",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "6036d4df881fe1001c8f6165",
+          "title": "Next of Kin Phone Number",
+          "description": "Phone number of your Next of Kin?",
+          "groupId": "6036d4df881fe1001c8f6164",
+          "inputType": "text",
+          "questionType": "text",
+          "type": "default",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": false,
+            "type": "string",
+            "message": "Please provide your next of kin's phone number",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "6036d44d881fe1001c8f6162",
+          "title": "Next of Kin name",
+          "description": "Who is your next of kin?",
+          "groupId": "6036d44d881fe1001c8f6161",
+          "inputType": "text",
+          "questionType": "text",
+          "type": "default",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": false,
+            "type": "string",
+            "message": "Please provide your next of kin name",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602bbe162d18f9001c956c51",
+          "title": "Account Type",
+          "description": "What type of account do you have with your bank?",
+          "groupId": "602bbe162d18f9001c956c50",
           "inputType": "dropdown",
           "questionType": "multiChoice",
           "type": "byAdmin",
           "isSection": false,
-          "description": "In which state do you currently work or do business?",
           "blocked": false,
-          "keyValue": "office-state",
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Current",
+                "label": "Current",
+                "weightPoint": 0
+              },
+              {
+                "value": "Credit",
+                "label": "Credit",
+                "weightPoint": 0
+              },
+              {
+                "value": "Savings",
+                "label": "Savings",
+                "weightPoint": 0
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please select your account type",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602bbe662d18f9001c956c75",
+          "title": "Account number",
+          "description": "Your account number",
+          "groupId": "602bbe662d18f9001c956c74",
+          "inputType": "text",
+          "questionType": "text",
+          "type": "byAdmin",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please provide your account number",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602bbeee2d18f9001c956c7f",
+          "title": "Residential Address",
+          "description": "Where do you currently live?",
+          "groupId": "602bbeee2d18f9001c956c7e",
+          "inputType": "text",
+          "questionType": "text",
+          "type": "byAdmin",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please select loan purpose",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602bbf142d18f9001c956c86",
+          "title": "Highest Educational Qualification",
+          "description": "Which Educational qualification do you currently posses?",
+          "groupId": "602bbf142d18f9001c956c85",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "byAdmin",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Post Graduate",
+                "label": "Post Graduate",
+                "weightPoint": 0
+              },
+              {
+                "value": "Graduate",
+                "label": "Graduate",
+                "weightPoint": 0
+              },
+              {
+                "value": "Secondary",
+                "label": "Secondary",
+                "weightPoint": 0
+              },
+              {
+                "value": "Primary",
+                "label": "primary",
+                "weightPoint": 0
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please select your Educational Qualification",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602bbf852d18f9001c956c8d",
+          "title": "Marital Status",
+          "description": "What is your marital status?",
+          "groupId": "602bbf852d18f9001c956c8c",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "byAdmin",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Single",
+                "label": "Single",
+                "weightPoint": 0
+              },
+              {
+                "value": "Married",
+                "label": "Married",
+                "weightPoint": 0
+              },
+              {
+                "value": "Divorced",
+                "label": "Divorced",
+                "weightPoint": 0
+              },
+              {
+                "value": "Widowed",
+                "label": "Widowed",
+                "weightPoint": 0
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please select your marital status",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602bbfef2d18f9001c956c94",
+          "title": "Number of Children",
+          "description": "How many children or dependants do you have?",
+          "groupId": "602bbfef2d18f9001c956c93",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "byAdmin",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "none",
+                "label": "none",
+                "weightPoint": 0
+              },
+              {
+                "value": "Less than 3",
+                "label": "Less than 3",
+                "weightPoint": 0
+              },
+              {
+                "value": "Between 3 - 5",
+                "label": "Between 3 - 5",
+                "weightPoint": 0
+              },
+              {
+                "value": "More than 5",
+                "label": "More than 5",
+                "weightPoint": 0
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please select range of your number of children",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602bc0582d18f9001c956c9c",
+          "title": "Preferred contact method",
+          "description": "How do you prefer to be contacted?",
+          "groupId": "602bc0582d18f9001c956c9b",
+          "inputType": "checkbox",
+          "questionType": "multiChoice",
+          "type": "byAdmin",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "SMS",
+                "label": "SMS",
+                "weightPoint": 0
+              },
+              {
+                "value": "Email",
+                "label": "Email",
+                "weightPoint": 0
+              },
+              {
+                "value": "WhatsApp",
+                "label": "WhatsApp",
+                "weightPoint": 0
+              },
+              {
+                "value": "Phone Calls",
+                "label": "Phone Calls",
+                "weightPoint": 0
+              }
+            ]
+          },
+          "rules": {
+            "required": false,
+            "type": "string",
+            "message": "Please select your preferred contact method",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602bd6472d18f9001c956cb6",
+          "title": "Where is your location?",
+          "description": "Lenders need to know where you reside and work in to to gauge your viability for the loan",
+          "groupId": "602bd6472d18f9001c956cb5",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "onBoarding",
+          "isSection": false,
+          "blocked": false,
           "options": {
             "inline": false,
             "data": [
@@ -597,92 +926,267 @@
           "rules": {
             "required": true,
             "type": "string",
-            "message": "Select your work state",
+            "message": "Please select your location",
             "max": -1,
             "min": -1,
             "len": -1
           }
         },
         {
-          "_id": "6034fd1f89f630001d628ca4",
-          "title": "Work or Business Sector",
-          "groupId": "6034fd1f89f630001d628ca3",
+          "_id": "602bd6672d18f9001c956cde",
+          "title": "What is your employment status?",
+          "description": "Lenders need to know your employment status to determine how likely you are to repay a loan.",
+          "groupId": "602bd6672d18f9001c956cdd",
           "inputType": "dropdown",
           "questionType": "multiChoice",
-          "type": "byAdmin",
+          "type": "onBoarding",
           "isSection": false,
-          "description": "In which sector do you currently work or do business",
           "blocked": false,
-          "keyValue": "work-sector",
           "options": {
             "inline": false,
             "data": [
               {
-                "value": "Agriculture",
-                "label": "Agriculture",
-                "weightPoint": 0
+                "value": "Employed",
+                "label": "Employed",
+                "weightPoint": 10
               },
               {
-                "value": "Construction/Real Estate",
-                "label": "Construction/Real Estate",
-                "weightPoint": 0
+                "value": "Unemployed",
+                "label": "Unemployed",
+                "weightPoint": 5
               },
               {
-                "value": "Consumer Goods",
-                "label": "Consumer Goods",
-                "weightPoint": 0
+                "value": "Self employed",
+                "label": "Self employed (Business owner)",
+                "weightPoint": 5
               },
               {
-                "value": "Financial Services",
-                "label": "Financial Services",
-                "weightPoint": 0
-              },
-              {
-                "value": "Online",
-                "label": "Online",
-                "weightPoint": 0
-              },
-              {
-                "value": "Industrial Goods",
-                "label": "Industrial Goods",
-                "weightPoint": 0
-              },
-              {
-                "value": "Information and Communications Technology",
-                "label": "Information and Communications Technology",
-                "weightPoint": 0
-              },
-              {
-                "value": "Oil & Gas",
-                "label": "Oil & Gas",
-                "weightPoint": 0
-              },
-              {
-                "value": "Services",
-                "label": "Services",
-                "weightPoint": 0
-              },
-              {
-                "value": "Utilities",
-                "label": "Utilities",
-                "weightPoint": 0
-              },
-              {
-                "value": "Education",
-                "label": "Education",
-                "weightPoint": 0
-              },
-              {
-                "value": "Non-Governmental Organization",
-                "label": "Non-Governmental Organization",
-                "weightPoint": 0
+                "value": "Student",
+                "label": "Student",
+                "weightPoint": 5
               }
             ]
           },
           "rules": {
             "required": true,
             "type": "string",
-            "message": "Select your work sector",
+            "message": "Please select your employment status",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602bd67d2d18f9001c956ce4",
+          "title": "What is your income range?",
+          "description": "Lenders need to know how much you earn before you apply for a loan. This will help them get you a comfortable repayment period at the best rates",
+          "groupId": "602bd67d2d18f9001c956ce3",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "onBoarding",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Below 100,000",
+                "label": "Below 100,000",
+                "weightPoint": 5
+              },
+              {
+                "value": "100,000 - 500,000",
+                "label": "100,000 - 500,000",
+                "weightPoint": 7
+              },
+              {
+                "value": "500,000 - 1,000,000",
+                "label": "500,000 - 1,000,000",
+                "weightPoint": 8
+              },
+              {
+                "value": "1,000,000 - 5,000,000",
+                "label": "1,000,000 - 5,000,000",
+                "weightPoint": 9
+              },
+              {
+                "value": "Above 5,000,000",
+                "label": "Above 5,000,000",
+                "weightPoint": 10
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please select your income range",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602bd6c02d18f9001c956cf4",
+          "title": "How much do you intend to loan?",
+          "description": "Give us an idea of how much you might need to take as a loan in the near future",
+          "groupId": "602bd6c02d18f9001c956cf3",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "onBoarding",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Below 100,000",
+                "label": "Below 100,000",
+                "weightPoint": 5
+              },
+              {
+                "value": "100,000 - 500,000",
+                "label": "100,000 - 500,000",
+                "weightPoint": 5
+              },
+              {
+                "value": "500,000 - 1,000,000",
+                "label": "500,000 - 1,000,000",
+                "weightPoint": 5
+              },
+              {
+                "value": "1,000,000 - 5,000,000",
+                "label": "1,000,000 - 5,000,000",
+                "weightPoint": 5
+              },
+              {
+                "value": "Above 5,000,000",
+                "label": "Above 5,000,000",
+                "weightPoint": 5
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Pick loan amount range",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602cfac5529fbc001c67a077",
+          "title": "Loan Amount",
+          "description": "How much do you need to loan?",
+          "groupId": "602cfac5529fbc001c67a076",
+          "inputType": "text",
+          "questionType": "text",
+          "type": "default",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please provide your loan amount",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602cfac5529fbc001c67a079",
+          "title": "What mode of identity do you poses?",
+          "description": "Lenders need to know what mode of identity you poses for KYC purposes.",
+          "groupId": "602cfac5529fbc001c67a078",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "onBoarding",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "National ID Card",
+                "label": "National ID Card",
+                "weightPoint": 10
+              },
+              {
+                "value": "International Passport",
+                "label": "International Passport",
+                "weightPoint": 10
+              },
+              {
+                "value": "National Drivers License",
+                "label": "National Drivers License",
+                "weightPoint": 10
+              },
+              {
+                "value": "Work ID Card",
+                "label": "Work ID Card",
+                "weightPoint": 5
+              },
+              {
+                "value": "NYSC ID Card",
+                "label": "NYSC ID Card",
+                "weightPoint": 7
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please select your mode of identity",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "602cfac5529fbc001c67a07b",
+          "title": "Loan Tenure (Months)",
+          "description": "How much time (in months) do you need to pay back?",
+          "groupId": "602cfac5529fbc001c67a07a",
+          "inputType": "text",
+          "questionType": "text",
+          "type": "default",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please provide your loan tenure",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "6033a823bd5afd14ade3c92e",
+          "title": "New Form Again",
+          "description": "Question Description",
+          "groupId": "6033a823bd5afd14ade3c92d",
+          "inputType": "text",
+          "questionType": "text",
+          "type": "default",
+          "isSection": true,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": false,
+            "type": "string",
+            "message": "Invalid input",
             "max": -1,
             "min": -1,
             "len": -1
@@ -691,14 +1195,13 @@
         {
           "_id": "6034fb4989f630001d628c70",
           "title": "Bank",
+          "description": "WHich bank does your earned income get paid",
           "groupId": "6034fb4989f630001d628c6f",
           "inputType": "dropdown",
           "questionType": "multiChoice",
           "type": "byAdmin",
           "isSection": false,
-          "description": "WHich bank does your earned income get paid",
           "blocked": false,
-          "keyValue": "income-bank",
           "options": {
             "inline": false,
             "data": [
@@ -879,283 +1382,99 @@
           }
         },
         {
-          "_id": "6033a823bd5afd14ade3c92e",
-          "title": "New Form Again",
-          "groupId": "6033a823bd5afd14ade3c92d",
-          "inputType": null,
-          "questionType": null,
-          "type": "default",
-          "isSection": true,
-          "description": "Question Description",
-          "blocked": false,
-          "keyValue": "age",
-          "options": {
-            "inline": false,
-            "data": []
-          },
-          "rules": {
-            "required": false,
-            "type": "string",
-            "message": "Invalid input",
-            "max": -1,
-            "min": -1,
-            "len": -1
-          }
-        },
-        {
-          "_id": "602cfac5529fbc001c67a07b",
-          "title": "Loan Tenure (Months)",
-          "groupId": "602cfac5529fbc001c67a07a",
-          "inputType": "text",
-          "questionType": "text",
-          "type": "default",
-          "isSection": false,
-          "description": "How much time (in months) do you need to pay back?",
-          "blocked": false,
-          "keyValue": "loan-tenure",
-          "options": {
-            "inline": false,
-            "data": []
-          },
-          "rules": {
-            "required": true,
-            "type": "string",
-            "message": "Please provide your loan tenure",
-            "max": -1,
-            "min": -1,
-            "len": -1
-          }
-        },
-        {
-          "_id": "602cfac5529fbc001c67a079",
-          "title": "What mode of identity do you poses?",
-          "groupId": "602cfac5529fbc001c67a078",
+          "_id": "6034fd1f89f630001d628ca4",
+          "title": "Work or Business Sector",
+          "description": "In which sector do you currently work or do business",
+          "groupId": "6034fd1f89f630001d628ca3",
           "inputType": "dropdown",
           "questionType": "multiChoice",
-          "type": "onBoarding",
+          "type": "byAdmin",
           "isSection": false,
-          "description": "Lenders need to know what mode of identity you poses for KYC purposes.",
           "blocked": false,
-          "keyValue": "form-of-id",
           "options": {
             "inline": false,
             "data": [
               {
-                "value": "National ID Card",
-                "label": "National ID Card",
-                "weightPoint": 10
+                "value": "Agriculture",
+                "label": "Agriculture",
+                "weightPoint": 0
               },
               {
-                "value": "International Passport",
-                "label": "International Passport",
-                "weightPoint": 10
+                "value": "Construction/Real Estate",
+                "label": "Construction/Real Estate",
+                "weightPoint": 0
               },
               {
-                "value": "National Drivers License",
-                "label": "National Drivers License",
-                "weightPoint": 10
+                "value": "Consumer Goods",
+                "label": "Consumer Goods",
+                "weightPoint": 0
               },
               {
-                "value": "Work ID Card",
-                "label": "Work ID Card",
-                "weightPoint": 5
+                "value": "Financial Services",
+                "label": "Financial Services",
+                "weightPoint": 0
               },
               {
-                "value": "NYSC ID Card",
-                "label": "NYSC ID Card",
-                "weightPoint": 7
+                "value": "Online",
+                "label": "Online",
+                "weightPoint": 0
+              },
+              {
+                "value": "Industrial Goods",
+                "label": "Industrial Goods",
+                "weightPoint": 0
+              },
+              {
+                "value": "Information and Communications Technology",
+                "label": "Information and Communications Technology",
+                "weightPoint": 0
+              },
+              {
+                "value": "Oil & Gas",
+                "label": "Oil & Gas",
+                "weightPoint": 0
+              },
+              {
+                "value": "Services",
+                "label": "Services",
+                "weightPoint": 0
+              },
+              {
+                "value": "Utilities",
+                "label": "Utilities",
+                "weightPoint": 0
+              },
+              {
+                "value": "Education",
+                "label": "Education",
+                "weightPoint": 0
+              },
+              {
+                "value": "Non-Governmental Organization",
+                "label": "Non-Governmental Organization",
+                "weightPoint": 0
               }
             ]
           },
           "rules": {
             "required": true,
             "type": "string",
-            "message": "Please select loan purpose",
+            "message": "Select your work sector",
             "max": -1,
             "min": -1,
             "len": -1
           }
         },
         {
-          "_id": "602cfac5529fbc001c67a077",
-          "title": "Loan Amount",
-          "groupId": "602cfac5529fbc001c67a076",
-          "inputType": "text",
-          "questionType": "text",
-          "type": "default",
-          "isSection": false,
-          "description": "How much do you need to loan?",
-          "blocked": false,
-          "keyValue": "loan-amount",
-          "options": {
-            "inline": false,
-            "data": []
-          },
-          "rules": {
-            "required": true,
-            "type": "string",
-            "message": "Please provide your loan amount",
-            "max": -1,
-            "min": -1,
-            "len": -1
-          }
-        },
-        {
-          "_id": "602bd6c02d18f9001c956cf4",
-          "title": "How much do you intend to loan?",
-          "groupId": "602bd6c02d18f9001c956cf3",
+          "_id": "6034fdd689f630001d628cb3",
+          "title": "Work or Business State",
+          "description": "In which state do you currently work or do business?",
+          "groupId": "6034fdd689f630001d628cb2",
           "inputType": "dropdown",
           "questionType": "multiChoice",
-          "type": "onBoarding",
+          "type": "byAdmin",
           "isSection": false,
-          "description": "Give us an idea of how much you might need to take as a loan in the near future",
           "blocked": false,
-          "keyValue": null,
-          "options": {
-            "inline": false,
-            "data": [
-              {
-                "value": "Below 100,000",
-                "label": "Below 100,000",
-                "weightPoint": 5
-              },
-              {
-                "value": "100,000 - 500,000",
-                "label": "100,000 - 500,000",
-                "weightPoint": 5
-              },
-              {
-                "value": "500,000 - 1,000,000",
-                "label": "500,000 - 1,000,000",
-                "weightPoint": 5
-              },
-              {
-                "value": "1,000,000 - 5,000,000",
-                "label": "1,000,000 - 5,000,000",
-                "weightPoint": 5
-              },
-              {
-                "value": "Above 5,000,000",
-                "label": "Above 5,000,000",
-                "weightPoint": 5
-              }
-            ]
-          },
-          "rules": {
-            "required": true,
-            "type": "string",
-            "message": "Pick loan amount range",
-            "max": -1,
-            "min": -1,
-            "len": -1
-          }
-        },
-        {
-          "_id": "602bd67d2d18f9001c956ce4",
-          "title": "What is your income range?",
-          "groupId": "602bd67d2d18f9001c956ce3",
-          "inputType": "dropdown",
-          "questionType": "multiChoice",
-          "type": "onBoarding",
-          "isSection": false,
-          "description": "Lenders need to know how much you earn before you apply for a loan. This will help them get you a comfortable repayment period at the best rates",
-          "blocked": false,
-          "keyValue": "monthly-net-income",
-          "options": {
-            "inline": false,
-            "data": [
-              {
-                "value": "Below 100,000",
-                "label": "Below 100,000",
-                "weightPoint": 5
-              },
-              {
-                "value": "100,000 - 500,000",
-                "label": "100,000 - 500,000",
-                "weightPoint": 7
-              },
-              {
-                "value": "500,000 - 1,000,000",
-                "label": "500,000 - 1,000,000",
-                "weightPoint": 8
-              },
-              {
-                "value": "1,000,000 - 5,000,000",
-                "label": "1,000,000 - 5,000,000",
-                "weightPoint": 9
-              },
-              {
-                "value": "Above 5,000,000",
-                "label": "Above 5,000,000",
-                "weightPoint": 10
-              }
-            ]
-          },
-          "rules": {
-            "required": true,
-            "type": "string",
-            "message": "Please select loan purpose",
-            "max": -1,
-            "min": -1,
-            "len": -1
-          }
-        },
-        {
-          "_id": "602bd6672d18f9001c956cde",
-          "title": "What is your employment status?",
-          "groupId": "602bd6672d18f9001c956cdd",
-          "inputType": "dropdown",
-          "questionType": "multiChoice",
-          "type": "onBoarding",
-          "isSection": false,
-          "description": "Lenders need to know your employment status to determine how likely you are to repay a loan.",
-          "blocked": false,
-          "keyValue": "employment-status",
-          "options": {
-            "inline": false,
-            "data": [
-              {
-                "value": "Employed",
-                "label": "Employed",
-                "weightPoint": 10
-              },
-              {
-                "value": "Unemployed",
-                "label": "Unemployed",
-                "weightPoint": 5
-              },
-              {
-                "value": "Self employed",
-                "label": "Self employed (Business owner)",
-                "weightPoint": 5
-              },
-              {
-                "value": "Student",
-                "label": "Student",
-                "weightPoint": 5
-              }
-            ]
-          },
-          "rules": {
-            "required": true,
-            "type": "string",
-            "message": "Please select loan purpose",
-            "max": -1,
-            "min": -1,
-            "len": -1
-          }
-        },
-        {
-          "_id": "602bd6472d18f9001c956cb6",
-          "title": "Where is your location?",
-          "groupId": "602bd6472d18f9001c956cb5",
-          "inputType": "dropdown",
-          "questionType": "multiChoice",
-          "type": "onBoarding",
-          "isSection": false,
-          "description": "Lenders need to know where you reside and work in to to gauge your viability for the loan",
-          "blocked": false,
-          "keyValue": "state-of-residence",
           "options": {
             "inline": false,
             "data": [
@@ -1349,44 +1668,328 @@
           "rules": {
             "required": true,
             "type": "string",
-            "message": "Please select loan purpose",
+            "message": "Select your work state",
             "max": -1,
             "min": -1,
             "len": -1
           }
         },
         {
-          "_id": "602bc0582d18f9001c956c9c",
-          "title": "Preferred contact method",
-          "groupId": "602bc0582d18f9001c956c9b",
-          "inputType": "checkbox",
+          "_id": "6034fe1f89f630001d628cdb",
+          "title": "Work or Business Address",
+          "description": "The address of your office or business?",
+          "groupId": "6034fe1f89f630001d628cda",
+          "inputType": "text",
+          "questionType": "text",
+          "type": "byAdmin",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Provide your work or business address",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "6034fefd89f630001d628cde",
+          "title": "Company Size",
+          "description": "How big (in number of employees) is your business or the company where you work?",
+          "groupId": "6034fefd89f630001d628cdd",
+          "inputType": "dropdown",
           "questionType": "multiChoice",
           "type": "byAdmin",
           "isSection": false,
-          "description": "How do you prefer to be contacted?",
           "blocked": false,
-          "keyValue": "preferred-contact-method",
           "options": {
             "inline": false,
             "data": [
               {
-                "value": "SMS",
-                "label": "SMS",
+                "value": "Less than 10 employees",
+                "label": "Less than 10 employees",
                 "weightPoint": 0
               },
               {
-                "value": "Email",
-                "label": "Email",
+                "value": "Between 10 and 30 employees",
+                "label": "Between 10 and 30 employees",
                 "weightPoint": 0
               },
               {
-                "value": "WhatsApp",
-                "label": "WhatsApp",
+                "value": "Between 30 and 50 employees",
+                "label": "Between 30 and 50 employees",
                 "weightPoint": 0
               },
               {
-                "value": "Phone Calls",
-                "label": "Phone Calls",
+                "value": "Between 50 and 100 employees",
+                "label": "Between 50 and 100 employees",
+                "weightPoint": 0
+              },
+              {
+                "value": "More than 100 employees",
+                "label": "More than 100 employees",
+                "weightPoint": 0
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Select your company size",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "603500ec89f630001d628cee",
+          "title": "Residential Status",
+          "description": "What is your current living condition?",
+          "groupId": "603500ec89f630001d628ced",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "byAdmin",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Hone Owner",
+                "label": "Home Owner",
+                "weightPoint": 10
+              },
+              {
+                "value": "Renting",
+                "label": "Renting",
+                "weightPoint": 8
+              },
+              {
+                "value": "Living with Relatives",
+                "label": "Living with Relatives",
+                "weightPoint": 4
+              },
+              {
+                "value": "Living with Friends",
+                "label": "Living with Friends",
+                "weightPoint": 2
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Select your residential status",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "6035027b89f630001d628d39",
+          "title": "Loan Purpose",
+          "description": "What do you need this loan for?",
+          "groupId": "6035027b89f630001d628d38",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "default",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Wedding",
+                "label": "Wedding",
+                "weightPoint": 0
+              },
+              {
+                "value": "School Fees",
+                "label": "School Fees",
+                "weightPoint": 0
+              },
+              {
+                "value": "Side Hustle",
+                "label": "Side Hustle",
+                "weightPoint": 0
+              },
+              {
+                "value": "Burial",
+                "label": "Burial",
+                "weightPoint": 0
+              },
+              {
+                "value": "Shopping",
+                "label": "Shopping",
+                "weightPoint": 0
+              },
+              {
+                "value": "Vacation",
+                "label": "Vacation",
+                "weightPoint": 0
+              },
+              {
+                "value": "Medicals",
+                "label": "Medicals",
+                "weightPoint": 0
+              },
+              {
+                "value": "Renovations",
+                "label": "Renovations",
+                "weightPoint": 0
+              },
+              {
+                "value": "Car Purchase",
+                "label": "Car Purchase",
+                "weightPoint": 0
+              },
+              {
+                "value": "Pay-off Debts",
+                "label": "Pay-off Debts",
+                "weightPoint": 0
+              },
+              {
+                "value": "Moving to New Home",
+                "label": "Moving to New Home",
+                "weightPoint": 0
+              },
+              {
+                "value": "Business Expenses",
+                "label": "Business Expenses",
+                "weightPoint": 0
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Select the loan purpose",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "60350aad89f630001d628d74",
+          "title": "Running Loan",
+          "description": "Do you have a current running loan?",
+          "groupId": "60350aad89f630001d628d73",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "default",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "No",
+                "label": "No",
+                "weightPoint": 0
+              },
+              {
+                "value": "Yes",
+                "label": "Yes",
+                "weightPoint": 0
+              }
+            ]
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Select current loan status",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "60350b0889f630001d628d79",
+          "title": "Employer or Business name",
+          "description": "The name of your business or company where you work",
+          "groupId": "60350b0889f630001d628d78",
+          "inputType": "text",
+          "questionType": "text",
+          "type": "default",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": true,
+            "type": "string",
+            "message": "Please provide your employer or business name",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "60350ca489f630001d628d94",
+          "title": "Application Message",
+          "description": "Send an additional message to us with any other information you need us to have about your application",
+          "groupId": "60350ca489f630001d628d93",
+          "inputType": "textarea",
+          "questionType": "text",
+          "type": "default",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": []
+          },
+          "rules": {
+            "required": false,
+            "type": "string",
+            "message": "Please send an application message here",
+            "max": -1,
+            "min": -1,
+            "len": -1
+          }
+        },
+        {
+          "_id": "60350fab89f630001d628db0",
+          "title": "Referrer",
+          "description": "How did you hear about our product?",
+          "groupId": "60350fab89f630001d628daf",
+          "inputType": "dropdown",
+          "questionType": "multiChoice",
+          "type": "default",
+          "isSection": false,
+          "blocked": false,
+          "options": {
+            "inline": false,
+            "data": [
+              {
+                "value": "Facebook",
+                "label": "Facebook",
+                "weightPoint": 0
+              },
+              {
+                "value": "Twitter",
+                "label": "Twitter",
+                "weightPoint": 0
+              },
+              {
+                "value": "Instagram",
+                "label": "Instagram",
+                "weightPoint": 0
+              },
+              {
+                "value": "Email Campaign",
+                "label": "Email Campaign",
+                "weightPoint": 0
+              },
+              {
+                "value": "Whatsapp",
+                "label": "Whatsapp",
                 "weightPoint": 0
               }
             ]
@@ -1394,230 +1997,53 @@
           "rules": {
             "required": false,
             "type": "string",
-            "message": "Please select your preferred contact method",
+            "message": "Please select a referrer",
             "max": -1,
             "min": -1,
             "len": -1
           }
         },
         {
-          "_id": "602bbfef2d18f9001c956c94",
-          "title": "Number of Children",
-          "groupId": "602bbfef2d18f9001c956c93",
-          "inputType": "dropdown",
-          "questionType": "multiChoice",
-          "type": "byAdmin",
-          "isSection": false,
-          "description": "How many children or dependants do you have?",
-          "blocked": false,
-          "keyValue": "number-of-children",
-          "options": {
-            "inline": false,
-            "data": [
-              {
-                "value": "none",
-                "label": "none",
-                "weightPoint": 0
-              },
-              {
-                "value": "Less than 3",
-                "label": "Less than 3",
-                "weightPoint": 0
-              },
-              {
-                "value": "Between 3 - 5",
-                "label": "Between 3 - 5",
-                "weightPoint": 0
-              },
-              {
-                "value": "More than 5",
-                "label": "More than 5",
-                "weightPoint": 0
-              }
-            ]
-          },
-          "rules": {
-            "required": true,
-            "type": "string",
-            "message": "Please select loan purpose",
-            "max": -1,
-            "min": -1,
-            "len": -1
-          }
-        },
-        {
-          "_id": "602bbf852d18f9001c956c8d",
-          "title": "Marital Status",
-          "groupId": "602bbf852d18f9001c956c8c",
-          "inputType": "dropdown",
-          "questionType": "multiChoice",
-          "type": "byAdmin",
-          "isSection": false,
-          "description": "What is your marital status?",
-          "blocked": false,
-          "keyValue": "marital-status",
-          "options": {
-            "inline": false,
-            "data": [
-              {
-                "value": "Single",
-                "label": "Single",
-                "weightPoint": 0
-              },
-              {
-                "value": "Married",
-                "label": "Married",
-                "weightPoint": 0
-              },
-              {
-                "value": "Divorced",
-                "label": "Divorced",
-                "weightPoint": 0
-              },
-              {
-                "value": "Widowed",
-                "label": "Widowed",
-                "weightPoint": 0
-              }
-            ]
-          },
-          "rules": {
-            "required": true,
-            "type": "string",
-            "message": "Please select loan purpose",
-            "max": -1,
-            "min": -1,
-            "len": -1
-          }
-        },
-        {
-          "_id": "602bbf142d18f9001c956c86",
-          "title": "Highest Educational Qualification",
-          "groupId": "602bbf142d18f9001c956c85",
-          "inputType": "dropdown",
-          "questionType": "multiChoice",
-          "type": "byAdmin",
-          "isSection": false,
-          "description": "Which Educational qualification do you currently posses?",
-          "blocked": false,
-          "keyValue": "highest-education-qualification",
-          "options": {
-            "inline": false,
-            "data": [
-              {
-                "value": "Post Graduate",
-                "label": "Post Graduate",
-                "weightPoint": 0
-              },
-              {
-                "value": "Graduate",
-                "label": "Graduate",
-                "weightPoint": 0
-              },
-              {
-                "value": "Secondary",
-                "label": "Secondary",
-                "weightPoint": 0
-              },
-              {
-                "value": "Primary",
-                "label": "primary",
-                "weightPoint": 0
-              }
-            ]
-          },
-          "rules": {
-            "required": true,
-            "type": "string",
-            "message": "Please select loan purpose",
-            "max": -1,
-            "min": -1,
-            "len": -1
-          }
-        },
-        {
-          "_id": "602bbeee2d18f9001c956c7f",
-          "title": "Residential Address",
-          "groupId": "602bbeee2d18f9001c956c7e",
+          "_id": "6035105c89f630001d628db8",
+          "title": "Office/Business LGA",
+          "description": "In which LGA is your business or office?",
+          "groupId": "6035105c89f630001d628db7",
           "inputType": "text",
           "questionType": "text",
           "type": "byAdmin",
           "isSection": false,
-          "description": "Where do you currently live?",
           "blocked": false,
-          "keyValue": "residential-address",
           "options": {
             "inline": false,
             "data": []
           },
           "rules": {
-            "required": true,
+            "required": false,
             "type": "string",
-            "message": "Please select loan purpose",
+            "message": "Please provide your office LGA",
             "max": -1,
             "min": -1,
             "len": -1
           }
         },
         {
-          "_id": "602bbe662d18f9001c956c75",
-          "title": "Account number",
-          "groupId": "602bbe662d18f9001c956c74",
+          "_id": "6035108789f630001d628dbb",
+          "title": "Residential LGA",
+          "description": "In which LGA/City do you live?",
+          "groupId": "6035108789f630001d628dba",
           "inputType": "text",
           "questionType": "text",
           "type": "byAdmin",
           "isSection": false,
-          "description": "Your account number",
           "blocked": false,
-          "keyValue": null,
           "options": {
             "inline": false,
             "data": []
           },
           "rules": {
-            "required": true,
+            "required": false,
             "type": "string",
-            "message": "Please provide your account number",
-            "max": -1,
-            "min": -1,
-            "len": -1
-          }
-        },
-        {
-          "_id": "602bbe162d18f9001c956c51",
-          "title": "Account Type",
-          "groupId": "602bbe162d18f9001c956c50",
-          "inputType": "dropdown",
-          "questionType": "multiChoice",
-          "type": "byAdmin",
-          "isSection": false,
-          "description": "What type of account do you have with your bank?",
-          "blocked": false,
-          "keyValue": "account-type",
-          "options": {
-            "inline": false,
-            "data": [
-              {
-                "value": "Current",
-                "label": "Current",
-                "weightPoint": 0
-              },
-              {
-                "value": "Credit",
-                "label": "Credit",
-                "weightPoint": 0
-              },
-              {
-                "value": "Savings",
-                "label": "Savings",
-                "weightPoint": 0
-              }
-            ]
-          },
-          "rules": {
-            "required": true,
-            "type": "string",
-            "message": "Please select loan purpose",
+            "message": "Please provide your residential LGA",
             "max": -1,
             "min": -1,
             "len": -1
